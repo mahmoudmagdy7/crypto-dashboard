@@ -1,0 +1,19 @@
+{
+  "short_name": "Crypto Dashboard",
+  "name": "Crypto Dashboard",
+  "icons": [
+    {
+      "src": "https://web3pros.dev/images/logo/favicon.ico"
+    },
+    {
+      "src": "https://web3pros.dev/images/logo/favicon.ico"
+    },
+    {
+      "src": "https://web3pros.dev/images/logo/favicon.ico"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}

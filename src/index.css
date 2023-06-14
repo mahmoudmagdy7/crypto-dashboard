@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+:root {
+  --c-primary: #ff7f28;
+  --bg-lighter: #eeeeee41;
+}
+::selection {
+  background: var(--c-primary);
+}
+.shadow-md {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.05) !important;
+}
+#not-found * {
+  font-family: "Kanit", sans-serif;
+}
+/* typography */
+.c-text-primary {
+  color: var(--c-primary);
+}
+
+/* background */
+.bg-lighter {
+  background-color: var(--bg-lighter);
+}
+.c-bg-primary {
+  background-color: var(--c-primary);
+}
+.cursor-pointer {
+  cursor: pointer;
+}
+.active {
+  background-color: var(--bg-lighter);
+}
+.wallet:hover {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.04) !important;
+  cursor: pointer;
+  transition: box-shadow 0.3s;
+}
+.wallets-transactions {
+  overflow-y: scroll;
+  height: 55vh;
+  scrollbar-width: 0;
+  padding: 3px 10px;
+  box-shadow: inset 0px 5px 5px rgba(165, 165, 165, 0.158);
+  overflow-x: hidden;
+}
+.wallets-transactions::-webkit-scrollbar {
+  width: 3px;
+}
+.wallets-transactions::-webkit-scrollbar-thumb {
+  background: var(--c-primary);
+  border-radius: 20px 20px;
+}
+.table-responsive::-webkit-scrollbar {
+  width: 3px;
+}
+.table-responsive::-webkit-scrollbar-thumb {
+  background: var(--c-primary);
+  border-radius: 20px 20px;
+}
+
+.table-responsive {
+  max-height: 34vh !important;
+  box-shadow: inset 0px 5px 5px rgba(165, 165, 165, 0.158);
+  overflow-x: hidden;
+}
+
+table th {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background: #fff !important;
+  box-shadow: 0px 5px 5px rgba(165, 165, 165, 0.158);
+  border-top: solid transparent 20px;
+}
+
+#transaction-warning {
+  min-height: 20px;
+  color: rgb(239, 72, 72);
+  font-size: 14px !important;
+  margin-bottom: 5px;
+}
+#error-code {
+  background: linear-gradient(130deg, #ffa34f, #ff6f68);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  font-size: 12rem;
+  font-weight: 200;
+}
+
+#not-found {
+  font-weight: 200;
+}
+
+#not-found .oops {
+  letter-spacing: 3px;
+}
+#not-found a {
+  color: #ff6f68;
+  text-decoration: none;
+  border-bottom: dashed #ff6f68 1px;
+  margin-left: 5px;
+}
+#not-found .social-icons a {
+  color: #ff6f68;
+  border-bottom: none;
+  border: solid 1px #dbdbdb;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+}
+#not-found .social-icons a:hover {
+  color: #ffffff;
+  border-bottom: none;
+  border: solid 1px #ff6f68;
+  background: linear-gradient(130deg, #ffa34f, #ff6f68);
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+}
+@media screen and (max-width: 800px) {
+  #not-found h1 {
+    font-size: 30vw !important;
+  }
+}
